@@ -1,0 +1,26 @@
+.icon{
+    & svg path{
+        fill: var(--clr-text);
+    }
+}
+
+.social-icon{
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    padding: .5rem;
+    cursor: pointer;
+
+    & svg path{
+        fill: var(--clr-text);
+    }
+    &:hover svg path{
+        fill: var(--clr-accent);
+    }
+    &:hover {
+        transform: translateY(-4px);
+        filter: drop-shadow(0px 0px 0.5rem rgba(255, 255, 255, 0.3));
+    }
+}

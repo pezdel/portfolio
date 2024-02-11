@@ -1,0 +1,57 @@
+@use 'base/base';
+@use 'base/utils';
+@use 'base/typography';
+@use 'components/icon';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root{
+    --ff: "Poppins", sans-serif;
+
+    --clr-primary: #070709;
+    --clr-secondary: #1f1f1f;
+    --clr-accent: #dd5201;
+    --clr-text: #fff;
+    --clr-hover: #3a3939;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-h1: 4.5rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.25rem;
+    --fs-sm: 1rem;
+
+    // --clr-bg: radial-gradient(circle, #0d0d0d, #111111, #151515, #181818, #1b1b1b, #1b1b1b, #1b1b1b, #1b1b1b, #181818, #151515, #111111, #0d0d0d);
+    --clr-bg: var(--clr-primary);
+}
+
+/* background-image: radial-gradient(121.65% 100% at 32.68% 0,#3c4155 0,rgba(60,65,85,.18) 32.49%,rgba(60,65,85,0) 51.34%),radial-gradient(91.41% 43.04% at 50% 0,#1a1c24 20.67%,rgba(26,28,36,0) 100%),radial-gradient(69.96% 25.89% at 50% 100%,#15171e 22.77%,rgba(19,21,27,0) 100%); */
+/* background-image: radial-gradient(circle, #0d0d0d, #121212, #171717, #1b1b1b, #1f1f1f); */
+/* background-image: radial-gradient(121.65% 100% at 32.68% 0, #0d0d0d, #111111, #151515, #181818, #1b1b1b, #26222b, #34283a, #462c46, #732e53, #a22b4f, #c83439, #dd5201); */
+
+
+
+@media(width < 800px){
+    :root{
+        --fs-h1: 3.5rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.25rem;
+        --fs-body: 1.15rem;
+    }
+    section{
+        margin: 2rem .75rem;
+    }
+    .nav{
+        padding: 0 2rem;
+    }
+}
+
+@media(width < 500px){
+    :root{
+        --fs-h1: 3rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1rem;
+        --fs-body: .75rem;
+    }
+}
