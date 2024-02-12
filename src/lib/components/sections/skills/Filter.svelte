@@ -39,9 +39,7 @@
 <style lang="scss">
     .filter {
         display: flex;
-        height: 35px;
         align-items: center;
-        // border-radius: 1rem;
         gap: .75rem;
         
         & button {
@@ -55,20 +53,7 @@
             width: 90px;
             height: 60px;
             border-radius: .5rem;
-            // border-right: 2px solid var(--clr-accent);
-            // border-top: 2px solid var(--clr-accent);
-            // border-bottom: 2px solid var(--clr-accent);
 
-            &:first-child {
-                // border-top-left-radius: 1rem;
-                // border-bottom-left-radius: 1rem;
-                // border-left: 2px solid var(--clr-accent);
-            }
-            &:last-child{
-                // border-top-right-radius: 1rem;
-                // border-bottom-right-radius: 1rem;
-                // border-right: 2px solid var(--clr-accent);
-            }
             &:hover {
                 background-color: var(--clr-hover);
             }
@@ -76,6 +61,16 @@
                 color: var(--clr-accent);
                 border: 1px solid var(--clr-accent);
             }
+        }
+    }
+    @media(width < 576px){
+        .filter{
+            gap: .5rem;
+        }
+        .filter button{
+            width: 70px;
+            height: 50px;
+            font-size: var(--fs-sm);
         }
     }
 </style>

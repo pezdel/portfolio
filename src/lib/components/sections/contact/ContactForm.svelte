@@ -22,7 +22,7 @@
     <label for="message">Message:</label>
     <textarea rows=6 id="message" bind:value={message} required></textarea>
 
-    <button type="submit">Submit</button>
+    <button class="btn" type="submit">Submit</button>
 </form>
 
 <style lang="scss">
@@ -32,31 +32,34 @@
     form{
         display: flex;
         flex-direction: column;
-        min-width: 500px;
+        min-width: 450px;
         gap: .5rem;
-        padding: 1rem 3rem;
+        padding: 1rem;
         border-radius: 1rem;
 
         box-shadow: 0 -1px 1px 0 var(--clr-text);
         background-color: var(--clr-secondary);
-
     }
     input, textarea{
-        padding: .75rem 2rem;
+        padding: 1rem;
         min-width: 350px;
         border-radius: .5rem;
         background-color: var(--clr-text);
         border: 0;
     }
-
     button{
-        padding: .5rem;
-        max-width: 100px;
-        border: 0;
-        background-color: var(--clr-accent);
-        border-radius: .5rem;
-        font-weight: var(--fw-bold);
-        font-size: var(--fs-reg);
-        margin-top: 1rem;
+        margin-top: 1em;
+    }
+
+    @media(width < 576px){
+    // @media(width < 768px){
+        form{
+            min-width: 300px;
+            padding: .5rem;
+        }
+        input, textarea{
+            min-width: 250px;
+            padding: .5rem;
+        }
     }
 </style>

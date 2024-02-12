@@ -1,6 +1,6 @@
 <script lang="ts">
     import {fade} from 'svelte/transition';
-	import Icon from "$lib/components/sections/utils/Icon.svelte";
+	import Icon from "$lib/components/utils/Icon.svelte";
     import { svgSkills } from '$lib/utils/svgs'
     import type { Svgs } from '$lib/utils/svgs'
 	import type { Writable } from "svelte/store";
@@ -42,9 +42,8 @@
 <style lang="scss">
     .skills-cards{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
-        justify-items: center;
-        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
     }
     
     .skills-card {
@@ -55,8 +54,7 @@
         background-color: var(--clr-secondary);
         color: white;
         height: 140px;
-        width: 140px;
-        border-radius: 1rem;
+        border-radius: .75rem;
 
         & figcaption {
             position: absolute;
@@ -67,21 +65,15 @@
             color: #667;
             text-align: center;
         }
-
-        &:hover {
-            box-shadow: 0 -1px 2px 1px var(--clr-text);
-        }
     }
     @media(width < 576px){
         .skills-cards{
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: .5rem;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: .2rem;
         }
         .skills-card {
             height: 100px;
-            width: 100px;
+            border-radius: .5rem;
         }
-
     }
-    
 </style>

@@ -45,7 +45,6 @@
         --fs-body: 1.15rem;
     }
     section{
-        margin: 2rem .75rem;
         padding: 0 1rem;
     }
     .nav{
@@ -60,6 +59,9 @@
         --fs-h3: 1rem;
         --fs-body: .75rem;
         --fs-sm: .8rem;
+    }
+    section{
+        padding: 0 .5rem;
     }
     .skills__content{
         grid-template-columns: repeat(4, 1fr);

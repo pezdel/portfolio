@@ -2,7 +2,7 @@
     import Filter from './Filter.svelte'
     import { skillsIcon } from '$lib/utils/svgs';
 	import { writable } from 'svelte/store';
-	import Icon from '$lib/components/sections/utils/Icon.svelte';
+	import Icon from '$lib/components/utils/Icon.svelte';
 	import Cards from './Cards.svelte';
 
 
@@ -15,14 +15,10 @@
             <h2>Skills & Abilities</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div>
-            <Filter filterName={filterName} />
-        </div>
+        <Filter filterName={filterName} />
     </div>
 
-    <div class="skills__content">
-        <Cards filterName={filterName} />
-    </div>
+    <Cards filterName={filterName} />
 </section>
 
 
@@ -34,9 +30,10 @@
     }
     .skills__header{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: end;
-        padding-bottom: 3rem;
-        gap: .25rem;
+        align-items: center;
+        padding-bottom: 2rem;
+        gap: 1rem;
     }
 </style>
