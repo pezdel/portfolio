@@ -1,6 +1,6 @@
 <script lang="ts">
     import {fade} from 'svelte/transition';
-	import Icon from "$lib/components/utils/Icon.svelte";
+	import Icon from "$lib/components/sections/utils/Icon.svelte";
     import { svgSkills } from '$lib/utils/svgs'
     import type { Svgs } from '$lib/utils/svgs'
 	import type { Writable } from "svelte/store";

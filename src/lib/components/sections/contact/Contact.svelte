@@ -1,8 +1,8 @@
 <script lang="ts">
     import ContactImg from '$lib/assets/contact.svg'
-    import Form from './contact/Form.svelte'
+    import Form from './ContactForm.svelte'
     import { contactIcon } from '$lib/utils/svgs';
-    import Icon from '$lib/components/utils/Icon.svelte'
+    import Icon from '$lib/components/sections/utils/Icon.svelte'
 </script>
 
 <section class="contact wrapper" id="contact">

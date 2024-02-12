@@ -2,8 +2,8 @@
     import Spuy from '$lib/assets/spuy.png'
     import Pomo from '$lib/assets/pomo-clone.png'
     import { projectsIcon } from '$lib/utils/svgs';
-    import Icon from '$lib/components/utils/Icon.svelte';
-    import Card from './projects/Card.svelte'
+    import Icon from '$lib/components/sections/utils/Icon.svelte';
+    import Card from './Card.svelte'
 
 </script>
 

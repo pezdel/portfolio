@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Filter from './skills/Filter.svelte'
+    import Filter from './Filter.svelte'
     import { skillsIcon } from '$lib/utils/svgs';
 	import { writable } from 'svelte/store';
-	import Icon from '$lib/components/utils/Icon.svelte';
-	import Cards from './skills/Cards.svelte';
+	import Icon from '$lib/components/sections/utils/Icon.svelte';
+	import Cards from './Cards.svelte';
 
 
     const filterName = writable("all")

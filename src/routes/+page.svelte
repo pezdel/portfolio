@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { handleWheel, hide } from '$lib/events/handleWheel'
+	import { handleWheel, hide } from '$lib/utils/handleWheel'
 	import { Navbar, Home, Skills, Projects, Contact, Footer } from '$lib';
 
 	//todo:
