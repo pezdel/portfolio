@@ -18,3 +18,13 @@ h3 { font-size: var(--fs-h3) }
 .green{
     color: var(--clr-accent-900)
 }
+.accent{
+    color: var(--clr-accent);
+}
+
+.gray-out{
+    opacity: .1;
+}
+.non{
+    opacity: 1;
+}

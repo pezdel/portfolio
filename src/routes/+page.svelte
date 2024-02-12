@@ -26,7 +26,7 @@
 <header class:hideHeader={$hide}>
 	<Navbar />
 </header>
-<main>
+<main class="wrapper">
 	<Home />
 	<Skills />
 	<Projects />

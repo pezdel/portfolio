@@ -2,6 +2,7 @@
 @use 'base/utils';
 @use 'base/typography';
 @use 'components/icon';
+@use 'components/button';
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root{
@@ -20,7 +21,7 @@
     --fs-h2: 2.5rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.25rem;
-    --fs-sm: 1rem;
+    --fs-sm: .9rem;
 
     // --clr-bg: radial-gradient(circle, #0d0d0d, #111111, #151515, #181818, #1b1b1b, #1b1b1b, #1b1b1b, #1b1b1b, #181818, #151515, #111111, #0d0d0d);
     --clr-bg: var(--clr-primary);
@@ -32,7 +33,12 @@
 
 
 
-@media(width < 800px){
+//breakpoint templates
+// @media(width < 1200px){}
+// @media(width < 992px){}
+// @media(width < 768px){}
+// @media(width < 576px){}
+@media(width < 768px){
     :root{
         --fs-h1: 3.5rem;
         --fs-h2: 2rem;
@@ -41,17 +47,22 @@
     }
     section{
         margin: 2rem .75rem;
+        padding: 0 1rem;
     }
     .nav{
         padding: 0 2rem;
     }
 }
 
-@media(width < 500px){
+@media(width < 576px){
     :root{
         --fs-h1: 3rem;
         --fs-h2: 2rem;
         --fs-h3: 1rem;
         --fs-body: .75rem;
+        --fs-sm: .8rem;
+    }
+    .skills__content{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
