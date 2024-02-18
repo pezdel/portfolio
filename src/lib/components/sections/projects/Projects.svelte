@@ -15,9 +15,9 @@
     </div>
 
     <div class="projects__content">
-        <div class="box main-project">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
+        <Card class="card main-project" name='Spuy.com' />
+        <Card class="card" name='AnyGood.com' />
+        <Card class="card" name='Pomo-clone.com' />
     </div>
 </section>
 
@@ -37,17 +37,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-    }
-    .box {
-        background-color: var(--clr-secondary);
-        padding: 20px;
-        height: 250px;
-        text-align: center;
-        border-radius: 1rem;
-        grid-column: span 1;
-    }
-    .main-project{
-        grid-column: span 2;
     }
 
     @media(width < 768px){
