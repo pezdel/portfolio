@@ -1,24 +1,6 @@
 <script lang="ts">
-	import { handleWheel, hide } from '$lib/utils/handleWheel'
+	import { handleWheel, hide } from '$lib/utils/handleWheel';
 	import { Navbar, Home, Skills, Projects, Contact, Footer } from '$lib';
-
-	//todo:
-	//section icons
-	//nav border?
-	//skills: textbox?, better filtering? 
-	//prject: cards, everything.
-	//animations.
-	//contact - js
-	//social links working.
-	//lorum text replaced
-
-
-	//done:
-	//socials - home, footer
-	//background/gradient - home/contact
-	//footer styling
-	//contact: form 
-
 </script>
 
 <svelte:window on:wheel={handleWheel} />
@@ -37,8 +19,9 @@
 </footer>
 
 <style>
-	.hideHeader{
+	.hideHeader {
 		top: -70px;
 		transition: 0.5s;
 	}
 </style>
+

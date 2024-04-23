@@ -1,39 +1,66 @@
 <script lang="ts">
-    export let name: string
+	import Github from '$lib/assets/github.svg';
+	import Link from '$lib/assets/link.svg';
+	export let title: string;
+	export let text: string;
+	export let img: string;
+	export let github: string;
+	export let link: string;
 </script>
 
 <div class={$$props.class}>
-    <div class="left">
-        <h2>{name}</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus odio aut necessitatibus explicabo</p>
-        <div>
-            <a href="#">Github</a>
-            <a href="#">Live</a>
-        </div>
-    </div>
-    <div class="right">
-        Img
-    </div>
+	<img src={img} alt={title} class="card-img" />
+	<div class="card-content">
+		<h2 class="card-title">{title}</h2>
+		<p class="card-text">{text}</p>
+		<div class="links">
+			<a href={github}><img src={Github} alt="Github" /></a>
+			<a href={link}><img src={Link} alt="Link" /></a>
+		</div>
+	</div>
 </div>
 
-
-<style lang="scss">
-    .card{
-        display: grid;
-        background-color: var(--clr-secondary);
-        height: 250px;
-        padding: 2.5rem;
-        border-radius: 1rem;
-        grid-column: span 1;
-        grid-template-columns: 1fr 1fr;
-    }
-    .main-project{
-        grid-column: span 2;
-    }
-    @media(width < 768px){
-        .main-project{
-            grid-column: span 1;
-        }
-    }
-    
+<style>
+	.card {
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		padding: 1rem;
+	}
+	.card-img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.card-content {
+		padding: 1rem;
+	}
+	.card-title {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	.card-text {
+		font-size: 1rem;
+		color: #555;
+	}
+	img {
+		border-radius: 0.5rem;
+	}
+	.main-project {
+		grid-column: span 2;
+	}
+	@media (width < 768px) {
+		.main-project {
+			grid-column: span 1;
+		}
+	}
+	.links {
+		display: flex;
+		padding-top: 0.5rem;
+		gap: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
 </style>
