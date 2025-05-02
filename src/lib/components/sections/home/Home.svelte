@@ -7,12 +7,11 @@
 <section class="home" id="home">
 	<figure class="home__image">
 		<img src={HeroImg} alt="full-stack" />
-		<figcaption>Created using Midjourney with search of 'full-stack'</figcaption>
 	</figure>
 	<div class="home__content">
 		<h1>Adam Chilicki</h1>
 		<h3 class="accent">Full-Stack Developer</h3>
-		<p>'Building bridges between users and data with code' -gbt</p>
+		<p>Building bridges between users and data with code.</p>
 		<div class="buttons">
 			<a href="#contact" class="btn">Contact</a>
 			<Icon

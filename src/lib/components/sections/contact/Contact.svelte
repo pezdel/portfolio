@@ -6,7 +6,6 @@
 <section class="contact wrapper" id="contact">
 	<div class="contact__title">
 		<h2>Contact</h2>
-		<p>Lorem ipsum dolor sit, amet consectetur</p>
 	</div>
 	<div class="contact__content">
 		<img src={ContactImg} alt="" />
